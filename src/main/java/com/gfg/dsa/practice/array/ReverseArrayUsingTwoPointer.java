@@ -1,8 +1,8 @@
-package com.gfg.dsa.practice;
+package com.gfg.dsa.practice.array;
 
 import java.util.Arrays;
 
-public class ReverseUsingTwoPointer {
+public class ReverseArrayUsingTwoPointer {
     public static void main(String[] args) {
         int[] arr = {1, 3, 9, 18, 56};
         System.out.println("Unsorted list: " + Arrays.toString(arr));

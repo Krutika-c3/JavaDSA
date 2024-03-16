@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.searchingALgo.linear;
+package com.gfg.dsa.practice.searchingAlgo.linear;
 
 public class FindMinIn2DArrayUsingLinearSearch {
     public static void main(String[] args) {

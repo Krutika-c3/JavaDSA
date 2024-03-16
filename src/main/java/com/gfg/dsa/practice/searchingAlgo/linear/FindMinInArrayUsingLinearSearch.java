@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.searchingALgo.linear;
+package com.gfg.dsa.practice.searchingAlgo.linear;
 
 import java.util.Arrays;
 

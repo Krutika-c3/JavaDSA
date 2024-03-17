@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.searchingAlgo.binary;
+package com.gfg.dsa.practice.searchingAlgo.binary.OneDimensionalArray;
 
 import java.util.Arrays;
 

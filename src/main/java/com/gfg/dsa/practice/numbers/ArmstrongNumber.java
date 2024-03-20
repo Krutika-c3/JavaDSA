@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice;
+package com.gfg.dsa.practice.numbers;
 
 import java.util.Scanner;
 

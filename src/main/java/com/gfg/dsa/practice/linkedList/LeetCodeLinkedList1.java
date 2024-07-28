@@ -46,6 +46,37 @@ public class LeetCodeLinkedList1 {
         list.displayLinkedList();
     }
 
+    // https://leetcode.com/problems/merge-two-sorted-lists/submissions/
+    // Time complexity: O(m+n)
+    public static LeetCodeLinkedList1 merge(LeetCodeLinkedList1 first, LeetCodeLinkedList1 second) {
+        Node f = first.head;
+        Node s = second.head;
+
+        LeetCodeLinkedList1 ans = new LeetCodeLinkedList1();
+
+        while (f != null && s != null) {
+            if (f.value < s.value) {
+                ans.insertAtLastIndexUsingHead(f.value);
+                f = f.next;
+            } else {
+                ans.insertAtLastIndexUsingHead(s.value);
+                s = s.next;
+            }
+        }
+
+        while (f != null) {
+            ans.insertAtLastIndexUsingHead(f.value);
+            f = f.next;
+        }
+
+        while (s != null) {
+            ans.insertAtLastIndexUsingHead(s.value);
+            s = s.next;
+        }
+
+        return ans;
+    }
+
     // Method to insert a new node at the first index
     private void insertAtFirstIndex(int value) {
         // Create a new node with the given value
@@ -97,7 +128,6 @@ public class LeetCodeLinkedList1 {
         return null;
     }
 
-
     // Method to display the linked list
     private void displayLinkedList() {
         // Temporary node to traverse the list
@@ -131,37 +161,6 @@ public class LeetCodeLinkedList1 {
         }
         tail = node;
         tail.next = null;
-    }
-
-    // https://leetcode.com/problems/merge-two-sorted-lists/submissions/
-    // Time complexity: O(m+n)
-    public static LeetCodeLinkedList1 merge(LeetCodeLinkedList1 first, LeetCodeLinkedList1 second) {
-        Node f = first.head;
-        Node s = second.head;
-
-        LeetCodeLinkedList1 ans = new LeetCodeLinkedList1();
-
-        while (f != null && s != null) {
-            if (f.value < s.value) {
-                ans.insertAtLastIndexUsingHead(f.value);
-                f = f.next;
-            } else {
-                ans.insertAtLastIndexUsingHead(s.value);
-                s = s.next;
-            }
-        }
-
-        while (f != null) {
-            ans.insertAtLastIndexUsingHead(f.value);
-            f = f.next;
-        }
-
-        while (s != null) {
-            ans.insertAtLastIndexUsingHead(s.value);
-            s = s.next;
-        }
-
-        return ans;
     }
 
     public void bubbleSortUsingRecursion() {
@@ -203,7 +202,7 @@ public class LeetCodeLinkedList1 {
     }
 
     // recursion reverse
-    private void reverse(Node node) {
+    private void reverseUsingRecurssion(Node node) {
         if (node == tail) {
             head = tail;
             return;
@@ -216,24 +215,24 @@ public class LeetCodeLinkedList1 {
 
     // in place reversal of linked list
     // google, microsoft, apple, amazon: https://leetcode.com/problems/reverse-linked-list/
-    public void reverse() {
-        if (size < 2) {
-            return;
+    // https://youtu.be/ugQ2DVJJroc?si=vjDMAuwQss7puqrp
+    // Time complexity - O(n)
+    // Space complexity - O(1)
+    public Node reverse(Node head) {
+        if (size <= 1) { //size is 1 or empty
+            return head;
         }
 
         Node prev = null;
         Node present = head;
-        Node next = present.next;
 
         while (present != null) {
-            present.next = prev;
-            prev = present;
-            present = next;
-            if (next != null) {
-                next = next.next;
-            }
+            Node next = present.next; // move by 1 step
+            present.next = prev; // break link to next - now current will be linked(next) to previous
+            prev = present; // move by 1 step
+            present = next; // move by 1 step
         }
-        head = prev;
+        return prev; // return head i.e. first element
     }
 
     private class Node {

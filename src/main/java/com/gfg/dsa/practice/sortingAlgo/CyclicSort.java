@@ -2,6 +2,15 @@ package com.gfg.dsa.practice.sortingAlgo;
 
 import java.util.Arrays;
 
+/*
+    Time Complexity:
+        Best case - O(n)
+        Worst case - O(n)
+    Space complexity:
+        O(1)
+    Stability:
+       Not stable
+ */
 public class CyclicSort {
     public static void main(String[] args) {
         int[] arr = {3, 1, 5, 2, 4};

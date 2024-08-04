@@ -2,6 +2,15 @@ package com.gfg.dsa.practice.sortingAlgo;
 
 import java.util.Arrays;
 
+/*
+    Time Complexity:
+        Worst Case: O(n^2) - desc sorted array
+        Best Case: O(n) - array is already sorted
+    Space Complexity:
+        O(1) - constant time
+    Stability:
+        Yes, if two elements are equal, the algorithm typically does not change their relative order.
+ */
 public class InsertionSort {
     public static void main(String[] args) {
         int[] arr = {3, 1, 5, 2, 4};

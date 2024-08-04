@@ -2,6 +2,17 @@ package com.gfg.dsa.practice.sortingAlgo;
 
 import java.util.Arrays;
 
+/*
+    Time complexity:
+        Best: O(n) when array is already sorted
+        Worst: O(n^2) when array is sorting in descending order
+    Space complexity:
+        O(1)
+        No extra space required (like copying the array… AKA inplace sorting algorithm)
+    Stability:
+        Stability in sorting algorithms means that the relative order of equal elements remains unchanged after sorting.
+        Yes, Bubble Sort is considered a stable sorting algorithm.
+ */
 public class BubbleSort {
 
     public static void main(String[] args) {

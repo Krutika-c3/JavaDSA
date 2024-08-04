@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.recursion;
+package com.gfg.dsa.practice.recursion.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

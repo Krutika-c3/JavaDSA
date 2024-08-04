@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.recursion;
+package com.gfg.dsa.practice.recursion.numbers;
 
 public class RecursionForNumbers {
     public static void main(String[] args) {

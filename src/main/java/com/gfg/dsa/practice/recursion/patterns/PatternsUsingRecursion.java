@@ -1,4 +1,4 @@
-package com.gfg.dsa.practice.recursion;
+package com.gfg.dsa.practice.recursion.patterns;
 
 public class PatternsUsingRecursion {
     public static void main(String[] args) {

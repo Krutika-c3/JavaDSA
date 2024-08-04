@@ -3,6 +3,15 @@ package com.gfg.dsa.practice.recursion.arrays.sortingAlgos;
 import java.util.Arrays;
 
 /*
+    Time complexity:
+        Best: O(n^2)
+        Worst: O(n^2)
+    Space complexity:
+        O(1)
+    Stability:
+        No, Selection Sort is not stable.
+        In Selection Sort, the algorithm selects the smallest (or largest) element from the unsorted portion of the array and swaps it with the first unsorted element. During this process, the relative order of equal elements may change if they are not adjacent to each other in the original array.
+    Steps:
     1. Find largest number
     2. Swap with the last element in the unsorted array
     3. Move to next iteration

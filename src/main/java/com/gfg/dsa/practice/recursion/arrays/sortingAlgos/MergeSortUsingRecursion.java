@@ -14,7 +14,10 @@ import java.util.Arrays;
                         = N * log(n)
 
     When copying array :
-    Space complexity = O(n) because n elements in a stack 
+    Space complexity = O(n) because n elements in a stack
+
+    For inpalce sorting :
+    Space complexity = O(n)
  */
 public class MergeSortUsingRecursion {
     public static void main(String[] args) {
